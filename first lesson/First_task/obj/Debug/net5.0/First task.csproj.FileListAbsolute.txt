@@ -1,0 +1,16 @@
+F:\Homemade\TASKsC#\Goodline\first lesson\First_task\bin\Debug\net5.0\First task.exe
+F:\Homemade\TASKsC#\Goodline\first lesson\First_task\bin\Debug\net5.0\First task.deps.json
+F:\Homemade\TASKsC#\Goodline\first lesson\First_task\bin\Debug\net5.0\First task.runtimeconfig.json
+F:\Homemade\TASKsC#\Goodline\first lesson\First_task\bin\Debug\net5.0\First task.runtimeconfig.dev.json
+F:\Homemade\TASKsC#\Goodline\first lesson\First_task\bin\Debug\net5.0\First task.dll
+F:\Homemade\TASKsC#\Goodline\first lesson\First_task\bin\Debug\net5.0\ref\First task.dll
+F:\Homemade\TASKsC#\Goodline\first lesson\First_task\bin\Debug\net5.0\First task.pdb
+F:\Homemade\TASKsC#\Goodline\first lesson\First_task\obj\Debug\net5.0\First task.csprojAssemblyReference.cache
+F:\Homemade\TASKsC#\Goodline\first lesson\First_task\obj\Debug\net5.0\First task.GeneratedMSBuildEditorConfig.editorconfig
+F:\Homemade\TASKsC#\Goodline\first lesson\First_task\obj\Debug\net5.0\First task.AssemblyInfoInputs.cache
+F:\Homemade\TASKsC#\Goodline\first lesson\First_task\obj\Debug\net5.0\First task.AssemblyInfo.cs
+F:\Homemade\TASKsC#\Goodline\first lesson\First_task\obj\Debug\net5.0\First task.csproj.CoreCompileInputs.cache
+F:\Homemade\TASKsC#\Goodline\first lesson\First_task\obj\Debug\net5.0\First task.dll
+F:\Homemade\TASKsC#\Goodline\first lesson\First_task\obj\Debug\net5.0\ref\First task.dll
+F:\Homemade\TASKsC#\Goodline\first lesson\First_task\obj\Debug\net5.0\First task.pdb
+F:\Homemade\TASKsC#\Goodline\first lesson\First_task\obj\Debug\net5.0\First task.genruntimeconfig.cache

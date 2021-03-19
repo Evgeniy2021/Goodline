@@ -1,0 +1,16 @@
+F:\Homemade\TASKsC#\Goodline\first lesson\ConsoleApp1\bin\Debug\net5.0\ConsoleApp1.exe
+F:\Homemade\TASKsC#\Goodline\first lesson\ConsoleApp1\bin\Debug\net5.0\ConsoleApp1.deps.json
+F:\Homemade\TASKsC#\Goodline\first lesson\ConsoleApp1\bin\Debug\net5.0\ConsoleApp1.runtimeconfig.json
+F:\Homemade\TASKsC#\Goodline\first lesson\ConsoleApp1\bin\Debug\net5.0\ConsoleApp1.runtimeconfig.dev.json
+F:\Homemade\TASKsC#\Goodline\first lesson\ConsoleApp1\bin\Debug\net5.0\ConsoleApp1.dll
+F:\Homemade\TASKsC#\Goodline\first lesson\ConsoleApp1\bin\Debug\net5.0\ref\ConsoleApp1.dll
+F:\Homemade\TASKsC#\Goodline\first lesson\ConsoleApp1\bin\Debug\net5.0\ConsoleApp1.pdb
+F:\Homemade\TASKsC#\Goodline\first lesson\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.csprojAssemblyReference.cache
+F:\Homemade\TASKsC#\Goodline\first lesson\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+F:\Homemade\TASKsC#\Goodline\first lesson\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.AssemblyInfoInputs.cache
+F:\Homemade\TASKsC#\Goodline\first lesson\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.AssemblyInfo.cs
+F:\Homemade\TASKsC#\Goodline\first lesson\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.csproj.CoreCompileInputs.cache
+F:\Homemade\TASKsC#\Goodline\first lesson\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.dll
+F:\Homemade\TASKsC#\Goodline\first lesson\ConsoleApp1\obj\Debug\net5.0\ref\ConsoleApp1.dll
+F:\Homemade\TASKsC#\Goodline\first lesson\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.pdb
+F:\Homemade\TASKsC#\Goodline\first lesson\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.genruntimeconfig.cache
