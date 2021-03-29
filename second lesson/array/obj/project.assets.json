@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Homemade\\TASKsC#\\GoodLine\\Goodline\\second lesson\\array\\Array\\Array.csproj",
+      "projectUniqueName": "F:\\Homemade\\TASKsC#\\GoodLine\\second lesson\\array\\Array.csproj",
       "projectName": "Array",
-      "projectPath": "F:\\Homemade\\TASKsC#\\GoodLine\\Goodline\\second lesson\\array\\Array\\Array.csproj",
+      "projectPath": "F:\\Homemade\\TASKsC#\\GoodLine\\second lesson\\array\\Array.csproj",
       "packagesPath": "C:\\Users\\Teske\\.nuget\\packages\\",
-      "outputPath": "F:\\Homemade\\TASKsC#\\GoodLine\\Goodline\\second lesson\\array\\Array\\obj\\",
+      "outputPath": "F:\\Homemade\\TASKsC#\\GoodLine\\second lesson\\array\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
