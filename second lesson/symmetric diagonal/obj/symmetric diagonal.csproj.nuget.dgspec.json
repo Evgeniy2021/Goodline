@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Homemade\\TASKsC#\\GoodLine\\Goodline\\second lesson\\symm_diagonal_array\\symmetric diagonal\\symmetric diagonal.csproj": {}
+    "F:\\Homemade\\TASKsC#\\GoodLine\\second lesson\\symmetric diagonal\\symmetric diagonal.csproj": {}
   },
   "projects": {
-    "F:\\Homemade\\TASKsC#\\GoodLine\\Goodline\\second lesson\\symm_diagonal_array\\symmetric diagonal\\symmetric diagonal.csproj": {
+    "F:\\Homemade\\TASKsC#\\GoodLine\\second lesson\\symmetric diagonal\\symmetric diagonal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Homemade\\TASKsC#\\GoodLine\\Goodline\\second lesson\\symm_diagonal_array\\symmetric diagonal\\symmetric diagonal.csproj",
+        "projectUniqueName": "F:\\Homemade\\TASKsC#\\GoodLine\\second lesson\\symmetric diagonal\\symmetric diagonal.csproj",
         "projectName": "symmetric diagonal",
-        "projectPath": "F:\\Homemade\\TASKsC#\\GoodLine\\Goodline\\second lesson\\symm_diagonal_array\\symmetric diagonal\\symmetric diagonal.csproj",
+        "projectPath": "F:\\Homemade\\TASKsC#\\GoodLine\\second lesson\\symmetric diagonal\\symmetric diagonal.csproj",
         "packagesPath": "C:\\Users\\Teske\\.nuget\\packages\\",
-        "outputPath": "F:\\Homemade\\TASKsC#\\GoodLine\\Goodline\\second lesson\\symm_diagonal_array\\symmetric diagonal\\obj\\",
+        "outputPath": "F:\\Homemade\\TASKsC#\\GoodLine\\second lesson\\symmetric diagonal\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

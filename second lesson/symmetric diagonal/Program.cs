@@ -18,9 +18,9 @@ namespace symmetric_diagonal
                     array[i, j] = int.Parse(Console.ReadLine());
                 }
             }
-            for (int i = 0; i < array.GetLength(0); i++)
+            for (int i = 0; i < array.GetLength(i); i++)
             {
-                for (int j = i + 1; j < array.GetLength(1) - i; j++)
+                for (int j = i + 1; j < array.GetLength(j) - i; j++)
                 {
                     if (array[i, j] != array[j, i])
                         symmetric = false;
