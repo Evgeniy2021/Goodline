@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Homemade\\TASKsC#\\GoodLine\\third lesson\\postOffice\\post_office\\post_office.csproj": {}
+    "F:\\Homemade\\TASKsC#\\GoodLine\\third lesson\\post_office\\post_office.csproj": {}
   },
   "projects": {
-    "F:\\Homemade\\TASKsC#\\GoodLine\\third lesson\\postOffice\\post_office\\post_office.csproj": {
+    "F:\\Homemade\\TASKsC#\\GoodLine\\third lesson\\post_office\\post_office.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Homemade\\TASKsC#\\GoodLine\\third lesson\\postOffice\\post_office\\post_office.csproj",
+        "projectUniqueName": "F:\\Homemade\\TASKsC#\\GoodLine\\third lesson\\post_office\\post_office.csproj",
         "projectName": "post_office",
-        "projectPath": "F:\\Homemade\\TASKsC#\\GoodLine\\third lesson\\postOffice\\post_office\\post_office.csproj",
+        "projectPath": "F:\\Homemade\\TASKsC#\\GoodLine\\third lesson\\post_office\\post_office.csproj",
         "packagesPath": "C:\\Users\\Teske\\.nuget\\packages\\",
-        "outputPath": "F:\\Homemade\\TASKsC#\\GoodLine\\third lesson\\postOffice\\post_office\\obj\\",
+        "outputPath": "F:\\Homemade\\TASKsC#\\GoodLine\\third lesson\\post_office\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
