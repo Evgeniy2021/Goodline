@@ -1,0 +1,16 @@
+F:\Homemade\TASKsC#\GoodLine\third lesson\postOffice\post_office\bin\Debug\net5.0\post_office.exe
+F:\Homemade\TASKsC#\GoodLine\third lesson\postOffice\post_office\bin\Debug\net5.0\post_office.deps.json
+F:\Homemade\TASKsC#\GoodLine\third lesson\postOffice\post_office\bin\Debug\net5.0\post_office.runtimeconfig.json
+F:\Homemade\TASKsC#\GoodLine\third lesson\postOffice\post_office\bin\Debug\net5.0\post_office.runtimeconfig.dev.json
+F:\Homemade\TASKsC#\GoodLine\third lesson\postOffice\post_office\bin\Debug\net5.0\post_office.dll
+F:\Homemade\TASKsC#\GoodLine\third lesson\postOffice\post_office\bin\Debug\net5.0\ref\post_office.dll
+F:\Homemade\TASKsC#\GoodLine\third lesson\postOffice\post_office\bin\Debug\net5.0\post_office.pdb
+F:\Homemade\TASKsC#\GoodLine\third lesson\postOffice\post_office\obj\Debug\net5.0\post_office.csprojAssemblyReference.cache
+F:\Homemade\TASKsC#\GoodLine\third lesson\postOffice\post_office\obj\Debug\net5.0\post_office.GeneratedMSBuildEditorConfig.editorconfig
+F:\Homemade\TASKsC#\GoodLine\third lesson\postOffice\post_office\obj\Debug\net5.0\post_office.AssemblyInfoInputs.cache
+F:\Homemade\TASKsC#\GoodLine\third lesson\postOffice\post_office\obj\Debug\net5.0\post_office.AssemblyInfo.cs
+F:\Homemade\TASKsC#\GoodLine\third lesson\postOffice\post_office\obj\Debug\net5.0\post_office.csproj.CoreCompileInputs.cache
+F:\Homemade\TASKsC#\GoodLine\third lesson\postOffice\post_office\obj\Debug\net5.0\post_office.dll
+F:\Homemade\TASKsC#\GoodLine\third lesson\postOffice\post_office\obj\Debug\net5.0\ref\post_office.dll
+F:\Homemade\TASKsC#\GoodLine\third lesson\postOffice\post_office\obj\Debug\net5.0\post_office.pdb
+F:\Homemade\TASKsC#\GoodLine\third lesson\postOffice\post_office\obj\Debug\net5.0\post_office.genruntimeconfig.cache
