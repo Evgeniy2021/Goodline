@@ -1,0 +1,16 @@
+F:\Homemade\TASKsC#\GoodLine\third lesson\ConsoleMenu\obj\Debug\net5.0\ConsoleMenu.csprojAssemblyReference.cache
+F:\Homemade\TASKsC#\GoodLine\third lesson\ConsoleMenu\obj\Debug\net5.0\ConsoleMenu.GeneratedMSBuildEditorConfig.editorconfig
+F:\Homemade\TASKsC#\GoodLine\third lesson\ConsoleMenu\obj\Debug\net5.0\ConsoleMenu.AssemblyInfoInputs.cache
+F:\Homemade\TASKsC#\GoodLine\third lesson\ConsoleMenu\obj\Debug\net5.0\ConsoleMenu.AssemblyInfo.cs
+F:\Homemade\TASKsC#\GoodLine\third lesson\ConsoleMenu\obj\Debug\net5.0\ConsoleMenu.csproj.CoreCompileInputs.cache
+F:\Homemade\TASKsC#\GoodLine\third lesson\ConsoleMenu\bin\Debug\net5.0\ConsoleMenu.exe
+F:\Homemade\TASKsC#\GoodLine\third lesson\ConsoleMenu\bin\Debug\net5.0\ConsoleMenu.deps.json
+F:\Homemade\TASKsC#\GoodLine\third lesson\ConsoleMenu\bin\Debug\net5.0\ConsoleMenu.runtimeconfig.json
+F:\Homemade\TASKsC#\GoodLine\third lesson\ConsoleMenu\bin\Debug\net5.0\ConsoleMenu.runtimeconfig.dev.json
+F:\Homemade\TASKsC#\GoodLine\third lesson\ConsoleMenu\bin\Debug\net5.0\ConsoleMenu.dll
+F:\Homemade\TASKsC#\GoodLine\third lesson\ConsoleMenu\bin\Debug\net5.0\ref\ConsoleMenu.dll
+F:\Homemade\TASKsC#\GoodLine\third lesson\ConsoleMenu\bin\Debug\net5.0\ConsoleMenu.pdb
+F:\Homemade\TASKsC#\GoodLine\third lesson\ConsoleMenu\obj\Debug\net5.0\ConsoleMenu.dll
+F:\Homemade\TASKsC#\GoodLine\third lesson\ConsoleMenu\obj\Debug\net5.0\ref\ConsoleMenu.dll
+F:\Homemade\TASKsC#\GoodLine\third lesson\ConsoleMenu\obj\Debug\net5.0\ConsoleMenu.pdb
+F:\Homemade\TASKsC#\GoodLine\third lesson\ConsoleMenu\obj\Debug\net5.0\ConsoleMenu.genruntimeconfig.cache
