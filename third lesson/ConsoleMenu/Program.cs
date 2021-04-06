@@ -44,9 +44,9 @@ namespace ConsoleMenu
         static public void DescriptionFile(Dictionary<string, string> typ_file)//вывод названия по короткому описанию
         {
             Console.Clear();
-            Console.WriteLine("\nВведите формат файла для отображения его описания");  //1. 
+            Console.WriteLine("\nВведите формат файла для отображения его описания");
             string format;
-            do                                                                         //2. 
+            do
             {
                 format = Console.ReadLine();
                 try
@@ -58,11 +58,10 @@ namespace ConsoleMenu
                 {
                     Console.WriteLine("Указанного формата \"{0}\" нет в списке.", format);
                     Console.WriteLine("Попробутй ещё раз, или для выхода в меню нажмите 'Esc'");
-
                 }
-            } while (typ_file.ContainsKey(format) | Console.ReadKey().Key != ConsoleKey.Escape);
-            Console.WriteLine("\nДля прехода в меню нажмите любую клавишу...");
-            Console.ReadKey();
+            } while (!typ_file.ContainsKey(format) || Console.ReadKey().Key != ConsoleKey.Escape);
+            //Console.WriteLine("\nДля прехода в меню нажмите любую клавишу...");
+            //Console.ReadKey();
         }
         //AttachTyp(3)
         static public void AttachTypFile(Dictionary<string, string> attach_typ)// Добавление нового формата и описания
@@ -95,22 +94,27 @@ namespace ConsoleMenu
         {
             Console.Clear();
             Console.WriteLine("Введите формата файла для его удаления из списка");
-            string del_format = Console.ReadLine();
-            while (del_format.Trim() == "")
+            do
             {
-                Console.Write("Попробуйте снова ввести формат: ");
-                del_format = Console.ReadLine();
-            }
-            // Console.WriteLine("\nУдалить формат \"{0}\" ", Console.ReadLine());
-            if (!remove_typ.ContainsKey(del_format))
-            {
-                Console.WriteLine("Формат файла не найден.");
-            }
-            else
-            {
-                remove_typ.Remove(del_format);
-                Console.WriteLine("Формат файла и его описание удалены.");
-            }
+                string del_format = Console.ReadLine();
+                while (del_format.Trim() == "")
+                {
+                    Console.Write("Укажите формат для удаления: ");
+                    del_format = Console.ReadLine();
+                }
+                if (!remove_typ.ContainsKey(del_format))
+                {
+                    Console.WriteLine("Формат файла не найден, попробуйте ещё раз. Для выхода в меню нажмите 'Home'");
+                }
+                else
+                {
+                    remove_typ.Remove(del_format);
+                    Console.WriteLine("Формат файла и его описание удалены.");
+                    Console.WriteLine("\nУдалить другой формат, или для прехода в меню нажмите 'Home'.");
+                }
+            } while (Console.ReadKey().Key != ConsoleKey.Home);
+            // Console.WriteLine("Для прехода в меню нажмите любую клавишу...");
+            // Console.ReadKey();
         }
         static void Main(string[] args)
         {
