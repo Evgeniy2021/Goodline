@@ -1,0 +1,16 @@
+F:\Homemade\TASKsC#\GoodLine\fourth lesson\DistinctCount_item4\bin\Debug\net5.0\DistinctCount_item4.exe
+F:\Homemade\TASKsC#\GoodLine\fourth lesson\DistinctCount_item4\bin\Debug\net5.0\DistinctCount_item4.deps.json
+F:\Homemade\TASKsC#\GoodLine\fourth lesson\DistinctCount_item4\bin\Debug\net5.0\DistinctCount_item4.runtimeconfig.json
+F:\Homemade\TASKsC#\GoodLine\fourth lesson\DistinctCount_item4\bin\Debug\net5.0\DistinctCount_item4.runtimeconfig.dev.json
+F:\Homemade\TASKsC#\GoodLine\fourth lesson\DistinctCount_item4\bin\Debug\net5.0\DistinctCount_item4.dll
+F:\Homemade\TASKsC#\GoodLine\fourth lesson\DistinctCount_item4\bin\Debug\net5.0\ref\DistinctCount_item4.dll
+F:\Homemade\TASKsC#\GoodLine\fourth lesson\DistinctCount_item4\bin\Debug\net5.0\DistinctCount_item4.pdb
+F:\Homemade\TASKsC#\GoodLine\fourth lesson\DistinctCount_item4\obj\Debug\net5.0\DistinctCount_item4.csprojAssemblyReference.cache
+F:\Homemade\TASKsC#\GoodLine\fourth lesson\DistinctCount_item4\obj\Debug\net5.0\DistinctCount_item4.GeneratedMSBuildEditorConfig.editorconfig
+F:\Homemade\TASKsC#\GoodLine\fourth lesson\DistinctCount_item4\obj\Debug\net5.0\DistinctCount_item4.AssemblyInfoInputs.cache
+F:\Homemade\TASKsC#\GoodLine\fourth lesson\DistinctCount_item4\obj\Debug\net5.0\DistinctCount_item4.AssemblyInfo.cs
+F:\Homemade\TASKsC#\GoodLine\fourth lesson\DistinctCount_item4\obj\Debug\net5.0\DistinctCount_item4.csproj.CoreCompileInputs.cache
+F:\Homemade\TASKsC#\GoodLine\fourth lesson\DistinctCount_item4\obj\Debug\net5.0\DistinctCount_item4.dll
+F:\Homemade\TASKsC#\GoodLine\fourth lesson\DistinctCount_item4\obj\Debug\net5.0\ref\DistinctCount_item4.dll
+F:\Homemade\TASKsC#\GoodLine\fourth lesson\DistinctCount_item4\obj\Debug\net5.0\DistinctCount_item4.pdb
+F:\Homemade\TASKsC#\GoodLine\fourth lesson\DistinctCount_item4\obj\Debug\net5.0\DistinctCount_item4.genruntimeconfig.cache
