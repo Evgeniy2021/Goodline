@@ -108,7 +108,7 @@ namespace ConsoleMenu
                 }
                 else
                 {
-                    remove_typ.Remove(del_format);
+                    remove_typ.Remove(del_format);//+++
                     Console.WriteLine("Формат файла и его описание удалены.");
                     Console.WriteLine("\nУдалить другой формат, или для прехода в меню нажмите 'Home'.");
                 }

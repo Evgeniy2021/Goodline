@@ -1,0 +1,16 @@
+F:\Homemade\TASKsC#\GoodLine\fourth lesson\Item_3\obj\Debug\net5.0\Item_3.csprojAssemblyReference.cache
+F:\Homemade\TASKsC#\GoodLine\fourth lesson\Item_3\obj\Debug\net5.0\Item_3.GeneratedMSBuildEditorConfig.editorconfig
+F:\Homemade\TASKsC#\GoodLine\fourth lesson\Item_3\obj\Debug\net5.0\Item_3.AssemblyInfoInputs.cache
+F:\Homemade\TASKsC#\GoodLine\fourth lesson\Item_3\obj\Debug\net5.0\Item_3.AssemblyInfo.cs
+F:\Homemade\TASKsC#\GoodLine\fourth lesson\Item_3\obj\Debug\net5.0\Item_3.csproj.CoreCompileInputs.cache
+F:\Homemade\TASKsC#\GoodLine\fourth lesson\Item_3\bin\Debug\net5.0\Item_3.exe
+F:\Homemade\TASKsC#\GoodLine\fourth lesson\Item_3\bin\Debug\net5.0\Item_3.deps.json
+F:\Homemade\TASKsC#\GoodLine\fourth lesson\Item_3\bin\Debug\net5.0\Item_3.runtimeconfig.json
+F:\Homemade\TASKsC#\GoodLine\fourth lesson\Item_3\bin\Debug\net5.0\Item_3.runtimeconfig.dev.json
+F:\Homemade\TASKsC#\GoodLine\fourth lesson\Item_3\bin\Debug\net5.0\Item_3.dll
+F:\Homemade\TASKsC#\GoodLine\fourth lesson\Item_3\bin\Debug\net5.0\ref\Item_3.dll
+F:\Homemade\TASKsC#\GoodLine\fourth lesson\Item_3\bin\Debug\net5.0\Item_3.pdb
+F:\Homemade\TASKsC#\GoodLine\fourth lesson\Item_3\obj\Debug\net5.0\Item_3.dll
+F:\Homemade\TASKsC#\GoodLine\fourth lesson\Item_3\obj\Debug\net5.0\ref\Item_3.dll
+F:\Homemade\TASKsC#\GoodLine\fourth lesson\Item_3\obj\Debug\net5.0\Item_3.pdb
+F:\Homemade\TASKsC#\GoodLine\fourth lesson\Item_3\obj\Debug\net5.0\Item_3.genruntimeconfig.cache
