@@ -19,9 +19,9 @@ namespace RandomClass
                 }*/
             }
             //Console.WriteLine("\n");
-            IEnumerable<int> temp_val = chaos.Where(num => num >= 10 && num <= 20).Distinct();
-            var sortVal = temp_val.OrderByDescending(val => val);
-            foreach (int upshot in sortVal)
+            IEnumerable<int> temp_val = (chaos.Where(num => num >= 10 && num <= 20).Distinct()).OrderByDescending(val => val);
+            //var sortVal = temp_val.OrderByDescending(val => val);
+            foreach (int upshot in temp_val)
             {
                 Console.Write(upshot + " ");
             }

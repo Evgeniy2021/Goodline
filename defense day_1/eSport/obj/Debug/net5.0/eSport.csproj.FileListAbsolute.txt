@@ -1,0 +1,32 @@
+F:\Homemade\TASKsC#\GoodLine\defensemen'day1\eSport\bin\Debug\net5.0\eSport.exe
+F:\Homemade\TASKsC#\GoodLine\defensemen'day1\eSport\bin\Debug\net5.0\eSport.deps.json
+F:\Homemade\TASKsC#\GoodLine\defensemen'day1\eSport\bin\Debug\net5.0\eSport.runtimeconfig.json
+F:\Homemade\TASKsC#\GoodLine\defensemen'day1\eSport\bin\Debug\net5.0\eSport.runtimeconfig.dev.json
+F:\Homemade\TASKsC#\GoodLine\defensemen'day1\eSport\bin\Debug\net5.0\eSport.dll
+F:\Homemade\TASKsC#\GoodLine\defensemen'day1\eSport\bin\Debug\net5.0\ref\eSport.dll
+F:\Homemade\TASKsC#\GoodLine\defensemen'day1\eSport\bin\Debug\net5.0\eSport.pdb
+F:\Homemade\TASKsC#\GoodLine\defensemen'day1\eSport\obj\Debug\net5.0\eSport.csprojAssemblyReference.cache
+F:\Homemade\TASKsC#\GoodLine\defensemen'day1\eSport\obj\Debug\net5.0\eSport.GeneratedMSBuildEditorConfig.editorconfig
+F:\Homemade\TASKsC#\GoodLine\defensemen'day1\eSport\obj\Debug\net5.0\eSport.AssemblyInfoInputs.cache
+F:\Homemade\TASKsC#\GoodLine\defensemen'day1\eSport\obj\Debug\net5.0\eSport.AssemblyInfo.cs
+F:\Homemade\TASKsC#\GoodLine\defensemen'day1\eSport\obj\Debug\net5.0\eSport.csproj.CoreCompileInputs.cache
+F:\Homemade\TASKsC#\GoodLine\defensemen'day1\eSport\obj\Debug\net5.0\eSport.dll
+F:\Homemade\TASKsC#\GoodLine\defensemen'day1\eSport\obj\Debug\net5.0\ref\eSport.dll
+F:\Homemade\TASKsC#\GoodLine\defensemen'day1\eSport\obj\Debug\net5.0\eSport.pdb
+F:\Homemade\TASKsC#\GoodLine\defensemen'day1\eSport\obj\Debug\net5.0\eSport.genruntimeconfig.cache
+F:\Homemade\TASKsC#\GoodLine\defense day_1\eSport\bin\Debug\net5.0\eSport.exe
+F:\Homemade\TASKsC#\GoodLine\defense day_1\eSport\bin\Debug\net5.0\eSport.deps.json
+F:\Homemade\TASKsC#\GoodLine\defense day_1\eSport\bin\Debug\net5.0\eSport.runtimeconfig.json
+F:\Homemade\TASKsC#\GoodLine\defense day_1\eSport\bin\Debug\net5.0\eSport.runtimeconfig.dev.json
+F:\Homemade\TASKsC#\GoodLine\defense day_1\eSport\bin\Debug\net5.0\eSport.dll
+F:\Homemade\TASKsC#\GoodLine\defense day_1\eSport\bin\Debug\net5.0\ref\eSport.dll
+F:\Homemade\TASKsC#\GoodLine\defense day_1\eSport\bin\Debug\net5.0\eSport.pdb
+F:\Homemade\TASKsC#\GoodLine\defense day_1\eSport\obj\Debug\net5.0\eSport.csprojAssemblyReference.cache
+F:\Homemade\TASKsC#\GoodLine\defense day_1\eSport\obj\Debug\net5.0\eSport.GeneratedMSBuildEditorConfig.editorconfig
+F:\Homemade\TASKsC#\GoodLine\defense day_1\eSport\obj\Debug\net5.0\eSport.AssemblyInfoInputs.cache
+F:\Homemade\TASKsC#\GoodLine\defense day_1\eSport\obj\Debug\net5.0\eSport.AssemblyInfo.cs
+F:\Homemade\TASKsC#\GoodLine\defense day_1\eSport\obj\Debug\net5.0\eSport.csproj.CoreCompileInputs.cache
+F:\Homemade\TASKsC#\GoodLine\defense day_1\eSport\obj\Debug\net5.0\eSport.dll
+F:\Homemade\TASKsC#\GoodLine\defense day_1\eSport\obj\Debug\net5.0\ref\eSport.dll
+F:\Homemade\TASKsC#\GoodLine\defense day_1\eSport\obj\Debug\net5.0\eSport.pdb
+F:\Homemade\TASKsC#\GoodLine\defense day_1\eSport\obj\Debug\net5.0\eSport.genruntimeconfig.cache
