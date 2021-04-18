@@ -62,6 +62,8 @@ namespace eSport
                 {
                     Console.WriteLine("Указанной команды \"{0}\" нет в списке.", teamName);
                     Console.WriteLine("Попробутй ещё раз, или для выхода в меню нажмите 'Esc'");
+                    if (Console.ReadKey().Key == ConsoleKey.Escape)
+                        break;
                 }
             } while (!victory.ContainsKey(teamName) || Console.ReadKey().Key != ConsoleKey.Escape);
             //Console.WriteLine("\nДля прехода в меню нажмите любую клавишу...");
@@ -109,12 +111,18 @@ namespace eSport
                 if (!remove_team.ContainsKey(del_team))
                 {
                     Console.WriteLine("Имя команды не найдено, попробуйте ещё раз. Для выхода в меню нажмите 'Home'");
+                    continue;
+                    if (Console.ReadKey().Key == ConsoleKey.Home)
+                        break;
                 }
                 else
                 {
                     remove_team.Remove(del_team);//+++
                     Console.WriteLine("Команда удалена из списка.");
                     Console.WriteLine("\nУдалить другую команду, или для прехода в меню нажмите 'Home'.");
+                    
+                    if (Console.ReadKey().Key == ConsoleKey.Home)
+                        break;
                 }
             } while (Console.ReadKey().Key != ConsoleKey.Home);
             // Console.WriteLine("Для прехода в меню нажмите любую клавишу...");
@@ -143,10 +151,20 @@ namespace eSport
         static public void TournamentStage(Dictionary<string, int> tournament_team)// Этапы турнира
         {
             Console.Clear();
+            
+
             Console.WriteLine("Команды прошедшие во второй тур\n");
-            var TeamVic = tournament_team.Where((team, index) => team.Value > 25);
-            foreach (var teamSt in TeamVic)
+            var TeamVictory = tournament_team.Where((team, index) => team.Value > 25);//.Select(team => team.Value + 3);
+            foreach (var teamSt in TeamVictory)
+            {
+                // TeamVictory = TeamVictory.Aggregate((TeVic, TeamVictory) => TeamVictory + 3);
                 Console.WriteLine(teamSt); // команды "второго" этапа
+            }
+
+            Console.WriteLine("Команды прошедшие в первый тур\n");
+
+            Console.WriteLine("Призовые места заняли финалисты\n");
+
             Console.WriteLine("\nДля прехода в меню нажмите любую клавишу...");
             Console.ReadKey();
         }
