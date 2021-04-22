@@ -37,7 +37,6 @@ F:\Homemade\TASKsC#\GoodLine\defense day_1\eSportClass\bin\Debug\net5.0\eSport.r
 F:\Homemade\TASKsC#\GoodLine\defense day_1\eSportClass\bin\Debug\net5.0\eSport.dll
 F:\Homemade\TASKsC#\GoodLine\defense day_1\eSportClass\bin\Debug\net5.0\ref\eSport.dll
 F:\Homemade\TASKsC#\GoodLine\defense day_1\eSportClass\bin\Debug\net5.0\eSport.pdb
-F:\Homemade\TASKsC#\GoodLine\defense day_1\eSportClass\obj\Debug\net5.0\eSport.csprojAssemblyReference.cache
 F:\Homemade\TASKsC#\GoodLine\defense day_1\eSportClass\obj\Debug\net5.0\eSport.GeneratedMSBuildEditorConfig.editorconfig
 F:\Homemade\TASKsC#\GoodLine\defense day_1\eSportClass\obj\Debug\net5.0\eSport.AssemblyInfoInputs.cache
 F:\Homemade\TASKsC#\GoodLine\defense day_1\eSportClass\obj\Debug\net5.0\eSport.AssemblyInfo.cs
@@ -46,3 +45,4 @@ F:\Homemade\TASKsC#\GoodLine\defense day_1\eSportClass\obj\Debug\net5.0\eSport.d
 F:\Homemade\TASKsC#\GoodLine\defense day_1\eSportClass\obj\Debug\net5.0\ref\eSport.dll
 F:\Homemade\TASKsC#\GoodLine\defense day_1\eSportClass\obj\Debug\net5.0\eSport.pdb
 F:\Homemade\TASKsC#\GoodLine\defense day_1\eSportClass\obj\Debug\net5.0\eSport.genruntimeconfig.cache
+F:\Homemade\TASKsC#\GoodLine\defense day_1\eSportClass\obj\Debug\net5.0\eSport.csprojAssemblyReference.cache

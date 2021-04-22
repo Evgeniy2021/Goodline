@@ -49,22 +49,22 @@ namespace eSport
                         Team.DisplayTeam(team_name);
                         break;
                     case ConsoleKey.D2:
-                        Program.Victory(team_name);
+                        Team.Victory(team_name);
                         break;
                     case ConsoleKey.D3:
-                        Program.AttachTeam(team_name);
+                        Team.AttachTeam(team_name);
                         break;
                     case ConsoleKey.D4:
-                        Program.RemoveTeam(team_name);
+                        Team.RemoveTeam(team_name);
                         break;
                     case ConsoleKey.D5:
-                        Program.TournamentStage(team_name);
+                        Team.TournamentStage(team_name);
                         break;
                     case ConsoleKey.D6:
-                        Program.StarVictory(team_name);
+                        Team.StarVictory(team_name);
                         break;
                     case ConsoleKey.D7:
-                        Program.FinalistsFirst(team_name);
+                        Team.FinalistsFirst(team_name);
                         break;
                     default: continue;
                 }
