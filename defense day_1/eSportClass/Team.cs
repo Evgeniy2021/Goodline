@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace eSport
 {
     class Team
     {
+        public string TeamName { get; set; }
+        public int NumVictory { get; set; }
+        public int Stars { get; set; }
+        public List<Player> Players { get; set; }
         //DisplayAllTeam(1)
         public static void DisplayTeam(Dictionary<string, int> all_team)//вывод полного списка команд
         {
@@ -138,7 +140,7 @@ namespace eSport
             Console.WriteLine("\nДля прехода в меню нажмите любую клавишу...");
             Console.ReadKey();
         }
-        //StarVictory(7)
+        //StarWin(7)
         static public void FinalistsFirst(Dictionary<string, int> contender)// Претенденты в финал
         {
             Console.Clear();

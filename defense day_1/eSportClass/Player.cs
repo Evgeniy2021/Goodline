@@ -1,18 +1,20 @@
 ﻿namespace eSport
 {
-    class TeamPlayer
+    class Player
     {
         public string Name { get; set; }
-        public string ClanName { get; set; }
+        //public string ClanName { get; set; }
         public int OfWins { get; set; }
         public int Level { get; set; }
-        public enum Status
+        public enum PlayerStatus
         {
             Глава,
             Соруководитель,
             Старейшина,
             Участник
         }
+        public PlayerStatus Status { get; set; }
+
     }
 }
 
