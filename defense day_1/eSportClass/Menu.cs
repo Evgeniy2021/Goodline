@@ -16,6 +16,15 @@ namespace eSport
             "7 - Претенденты на финал",
             "8 - Выход"
         };
+        /*static public string[] MenuStrings =
+             {
+            "1 - Вывод списка всех команд с колличеством побед в играх",
+            "2 - Вывод колличества побед указанной команды",
+            "3 - Турнирная сетка игр",
+            "4 - Звёздный статус",
+            "5 - Претенденты на финал",
+            "6 - Выход"
+        };*/
         static public void DisplayMenu()
         {
             Console.Clear();
@@ -26,7 +35,7 @@ namespace eSport
             Console.WriteLine("Нажмите цифру, соответствующую номеру меню.");
         }
         static public void Beginning()
-        { 
+        {
             Dictionary<string, int> team_name = new()
             {
                 { "Лига", 30 },
@@ -46,7 +55,7 @@ namespace eSport
                 switch (key)
                 {
                     case ConsoleKey.D1:
-                        Team.DisplayTeam(team_name);
+                        Team.DisplayTeam(Program. Teams);
                         break;
                     case ConsoleKey.D2:
                         Team.Victory(team_name);

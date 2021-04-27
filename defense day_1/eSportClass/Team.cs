@@ -4,25 +4,49 @@ using System.Linq;
 
 namespace eSport
 {
-    class Team
+    public class Team
     {
         public string TeamName { get; set; }
-        public int NumVictory { get; set; }
+        public int Wins { get; set; }
         public int Stars { get; set; }
         public List<Player> Players { get; set; }
+        public Team()
+        {
+            this.TeamName = "Имя";
+            this.Wins = 0;
+            this.Stars = 0;
+            this.Players = new List<Player>();
+        }
+        public Team(string TeamName, int Wins, int Stars, List<Player> Players)
+        {
+            this.TeamName = TeamName;
+            this.Wins = Wins;
+            this.Stars = Stars;
+            this.Players = Players;
+        }
+        public override string ToString()
+        {
+            string temp = $"{TeamName} {Wins} {Stars}\n";
+            foreach (var player in Players)
+                temp += "\n" + player;
+            return temp +"\n";//{TeamName,-10} |   {Wins,-3} |  {Stars,-3} |\n{"|",12} {"|",7} {"|",6}";
+        }
         //DisplayAllTeam(1)
-        public static void DisplayTeam(Dictionary<string, int> all_team)//вывод полного списка команд
+        public static void DisplayTeam(List<Team> Teams)//вывод полного списка команд
         {
             Console.Clear();
-            if (all_team.Count == 0)
+
+            if (Teams.Count == 0)
             {
                 Console.WriteLine("Список пуст.");
             }
             else
             {
-                foreach (KeyValuePair<string, int> all in all_team)
+                //Console.WriteLine("|");
+                foreach (Team all in Teams)
                 {
-                    Console.WriteLine("Команда {0},{1} побед", all.Key, all.Value);
+                    Console.WriteLine(all);
+
                 }
             }
             Console.WriteLine("Для прехода в меню нажмите любую клавишу...");
