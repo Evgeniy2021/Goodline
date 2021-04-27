@@ -19,18 +19,15 @@
             Name = "Нет имени";
             this.Level = 0;
             this.Status = (PlayerStatus)4;
-
         }
         public Player(string Name, int Level, PlayerStatus Status)
         {
             this.Name = Name;
             this.Level = Level;
             this.Status = Status;
-
         }
         public override string ToString()
         {
-
             return $"{Name,-10} {Level,-3} {Status,-3}";
         }
     }

@@ -75,7 +75,8 @@ namespace eSport
         static void Main()
         {
             InitTeams();
-            Menu.Beginning();
+            Menu.Begin();
+            //Menu.BeginAdmin();
         }
     }
 }
