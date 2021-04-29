@@ -7,8 +7,8 @@ namespace eSport
     {
         static public string[] Select =
              {
-            "1 - Администратор(полный доступ)",
-            "2 - Пользователь(только просмотр)",
+            "1 - Администратор",
+            "2 - Пользователь",
             "3 - Выход"
         };
         static public string[] MenuAdmin =
@@ -17,17 +17,17 @@ namespace eSport
             "2 - Вывод колличества побед указанной команды",
             "3 - Добавление новой команды с их победами",
             "4 - Удаление команды из списка",
-            "5 - Турнирная сетка игр",
+            "5 - Проведение турнира игр",
             "6 - Звёздный статус",
             "7 - Претенденты на финал",
-            "8 - Выход"
+            "8 - Назад"
         };
         static public string[] MenuUser =
              {
             "1 - Вывод списка всех команд с колличеством побед в играх",
             "2 - Вывод колличества побед указанной команды",
-            "3 - Турнирная сетка игр",
-            "5 - Выход"
+            "3 - Проведение турнира игр",
+            "4 - Назад"
         };
         static public void DisplayStart()
         {
@@ -74,8 +74,7 @@ namespace eSport
                     default: continue;
                 }
             } while (key != ConsoleKey.D3);
-            Console.Clear();
-            Console.WriteLine("До встречи!");
+
         }
         static public void BeginAdmin()
         {
@@ -101,16 +100,16 @@ namespace eSport
                         Team.DisplayTeam(Program.Teams);
                         break;
                     case ConsoleKey.D2:
-                        Team.Victory(team_name);
+                        Team.Victory(Program.Teams);
                         break;
                     case ConsoleKey.D3:
-                        Team.AttachTeam(team_name);
+                        Team.AttachTeam(Program.Teams);
                         break;
                     case ConsoleKey.D4:
-                        Team.RemoveTeam(team_name);
+                        Team.RemoveTeam(Program.Teams);
                         break;
                     case ConsoleKey.D5:
-                        Team.TournamentStage(team_name);
+                        Team.Tournament(Program.Teams);
                         break;
                     case ConsoleKey.D6:
                         Team.StarVictory(team_name);
@@ -121,8 +120,6 @@ namespace eSport
                     default: continue;
                 }
             } while (key != ConsoleKey.D8);
-            Console.Clear();
-            Console.WriteLine("До встречи!");
         }
         static public void BeginUser()
         {
@@ -148,16 +145,14 @@ namespace eSport
                         Team.DisplayTeam(Program.Teams);
                         break;
                     case ConsoleKey.D2:
-                        Team.Victory(team_name);
+                        Team.Victory(Program.Teams);
                         break;
                     case ConsoleKey.D3:
-                        Team.TournamentStage(team_name);
+                        Team.Tournament(Program.Teams);
                         break;
                     default: continue;
                 }
-            } while (key != ConsoleKey.D8);
-            Console.Clear();
-            Console.WriteLine("До встречи!");
+            } while (key != ConsoleKey.D4);
         }
     }
 }

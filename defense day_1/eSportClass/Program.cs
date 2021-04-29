@@ -70,13 +70,11 @@ namespace eSport
                 new Player("Елисей", 2, Player.PlayerStatus.Старейшина),
                 new Player("Таня", 2, Player.PlayerStatus.Соруководитель ),
             }));
-
         }
         static void Main()
         {
             InitTeams();
             Menu.Begin();
-            //Menu.BeginAdmin();
         }
     }
 }
