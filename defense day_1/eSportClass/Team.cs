@@ -26,7 +26,7 @@ namespace eSport
         }
         public override string ToString()
         {
-            string temp = $"{TeamName} {Wins} {Stars}\n";
+            string temp = $"Команда {TeamName}! - Одержано побед:{Wins}! - Боевых звёзд завоёвано:{Stars}!\n";
             foreach (var player in Players)
                 temp += "\n" + player;
             return temp + "\n";//{TeamName,-10} |   {Wins,-3} |  {Stars,-3} |\n{"|",12} {"|",7} {"|",6}";
@@ -152,6 +152,14 @@ namespace eSport
         static public void Tournament(List<Team> Teams)// турнир(сетка)
         {
             Console.Clear();
+            if (Teams.Count() != 8)
+            {
+                Console.WriteLine("Для проведения турнира нужно 8 команд!");
+                Console.WriteLine($" В списке {Teams.Count} команд.");
+                Console.WriteLine($"Нажмите любую клавишу.");
+                Console.ReadKey();
+                return;
+            }
             Console.WriteLine("Участники турнира:\n");
             Console.WriteLine($" {"Команды",-10} | {"Победы"}");
             Console.WriteLine($" {"-----------|--------"}");
@@ -169,36 +177,103 @@ namespace eSport
                         Console.WriteLine($" {"-----------",-10}|--------");
                 }
             }
+            Console.WriteLine("Для перехода к первому туру, нажмите любую клавишу.");
+            Console.ReadKey();
+            Console.Clear();
+            Random RandomWins = new Random();
+            List<Team> TourTeams = new List<Team>();
+            foreach (var team in Teams)
+            {
+                TourTeams.Add(team);
+            }
             Console.WriteLine("\nПервый тур\n");//------------------------------1----------------------------
-            //List<Team> Teams2tour = new List<Team>();
             Console.WriteLine($" {"Команды",-10} | {"Победы"}");
             Console.WriteLine($" {"-----------|--------"}");
-            Random WinsTeam = new Random();
-            List<Team> Teams2tour = Teams;
-            for (int i = 0; i < 2; i++)
+            foreach (var team in TourTeams)
             {
-               
-            }
-                foreach (var team in Teams2tour)
-            {
-               // team.Wins = 0;
-                if (Teams.Count == 0)
+                team.Wins = RandomWins.Next(0, 5);
+                // Console.WriteLine($"  {team.TeamName,-10}|   {team.Wins}{" ",-13}");
+                if (TourTeams.IndexOf(team) % 2 != 0 && TourTeams[TourTeams.IndexOf(team) - 1].Wins == team.Wins)
                 {
-                    Console.WriteLine("Список пуст.");
+                    team.Wins++;
                 }
+                Console.WriteLine($"  {team.TeamName,-10}|   {team.Wins}{" ",-13}");
+                if (TourTeams.IndexOf(team) % 2 != 0)
+                    Console.WriteLine($" {"-----------",-10}|--------");
+            }
+            Console.WriteLine("Для перехода ко второму туру, нажмите любую клавишу.");
+            Console.ReadKey();
+            Console.Clear();
+            for (int i = TourTeams.Count - 1; i > 0; i -= 2)
+            {
+                if (TourTeams[i].Wins > TourTeams[i - 1].Wins)
+                    TourTeams.Remove(TourTeams[i - 1]);
                 else
-                {
-                    Console.WriteLine($"  {team.TeamName,-10}|   {team.Wins}{" ",-13}");
-                    if (Teams.IndexOf(team) % 2 != 0)
-                        Console.WriteLine($" {"-----------",-10}|--------");
-                }
+                    TourTeams.Remove(TourTeams[i]);
             }
-                Console.WriteLine("Второй тур\n");
+            Console.WriteLine("Второй тур\n");//--------------------------------2----------------------------
+            Console.WriteLine($" {"Команды",-10} | {"Победы"}");
+            Console.WriteLine($" {"-----------|--------"}");
+            foreach (var team in TourTeams)
+            {
+                team.Wins = RandomWins.Next(0, 5);
+                // Console.WriteLine($"  {team.TeamName,-10}|   {team.Wins}{" ",-13}");
+                if (TourTeams.IndexOf(team) % 2 != 0 && TourTeams[TourTeams.IndexOf(team) - 1].Wins == team.Wins)
+                {
+                    team.Wins++;
+                }
+                Console.WriteLine($"  {team.TeamName,-10}|   {team.Wins}{" ",-13}");
+                if (TourTeams.IndexOf(team) % 2 != 0)
+                    Console.WriteLine($" {"-----------",-10}|--------");
+            }
+            Console.WriteLine("Для перехода к третьему туру, нажмите любую клавишу.");
+            Console.ReadKey();
+            Console.Clear();
+            for (int i = TourTeams.Count - 1; i > 0; i -= 2)
+            {
+                if (TourTeams[i].Wins > TourTeams[i - 1].Wins)
+                    TourTeams.Remove(TourTeams[i - 1]);
+                else
+                    TourTeams.Remove(TourTeams[i]);
+            }
+            Console.WriteLine("Третий тур\n");//--------------------------------3----------------------------
+            Console.WriteLine($" {"Команды",-10} | {"Победы"}");
+            Console.WriteLine($" {"-----------|--------"}");
+            foreach (var team in TourTeams)
+            {
+                team.Wins = RandomWins.Next(0, 5);
+                // Console.WriteLine($"  {team.TeamName,-10}|   {team.Wins}{" ",-13}");
+                if (TourTeams.IndexOf(team) % 2 != 0 && TourTeams[TourTeams.IndexOf(team) - 1].Wins == team.Wins)
+                {
+                    team.Wins++;
+                }
+                Console.WriteLine($"  {team.TeamName,-10}|   {team.Wins}{" ",-13}");
+                if (TourTeams.IndexOf(team) % 2 != 0)
+                    Console.WriteLine($" {"-----------",-10}|--------");
+            }
+            Console.WriteLine("Для перехода в финал, нажмите любую клавишу.");
+            Console.ReadKey();
+            Console.Clear();
+            for (int i = TourTeams.Count - 1; i > 0; i -= 2)
+            {
+                if (TourTeams[i].Wins > TourTeams[i - 1].Wins)
+                    TourTeams.Remove(TourTeams[i - 1]);
+                else
+                    TourTeams.Remove(TourTeams[i]);
+            }
+            Console.WriteLine("Победитель!!!\n");//-----------------------------V----------------------------
+            foreach (var team in TourTeams)
+            {
+                team.Wins = RandomWins.Next(0, 5);
+                // Console.WriteLine($"  {team.TeamName,-10}|   {team.Wins}{" ",-13}");
+                if (TourTeams.IndexOf(team) % 2 != 0 && TourTeams[TourTeams.IndexOf(team) - 1].Wins == team.Wins)
+                {
+                    team.Wins++;
+                }
 
-            Console.WriteLine("Третий тур\n");
-
-            Console.WriteLine("Победитель!!!\n");
-
+                if (TourTeams.IndexOf(team) % 2 == 0)
+                    Console.WriteLine(team);
+            }
             Console.WriteLine("\nДля прехода в меню нажмите любую клавишу...");
             Console.ReadKey();
         }

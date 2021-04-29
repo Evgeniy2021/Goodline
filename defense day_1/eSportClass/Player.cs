@@ -28,7 +28,7 @@
         }
         public override string ToString()
         {
-            return $"{Name,-10} {Level,-3} {Status,-3}";
+            return $"{Name,-10} Звёзд:{Level,-3} {Status,-3}";
         }
     }
 }
