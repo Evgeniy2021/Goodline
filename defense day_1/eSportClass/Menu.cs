@@ -34,6 +34,7 @@ namespace eSport
             Console.Clear();
             foreach (var select in Select)
             {
+                Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine(select);
             }
             Console.WriteLine("Нажмите цифру, соответствующую номеру меню.");
@@ -43,6 +44,7 @@ namespace eSport
             Console.Clear();
             foreach (var admin_menu in MenuAdmin)
             {
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine(admin_menu);
             }
             Console.WriteLine("Нажмите цифру, соответствующую номеру меню.");
@@ -52,6 +54,7 @@ namespace eSport
             Console.Clear();
             foreach (var user_menu in MenuUser)
             {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine(user_menu);
             }
             Console.WriteLine("Нажмите цифру, соответствующую номеру меню.");

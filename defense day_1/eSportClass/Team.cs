@@ -12,7 +12,7 @@ namespace eSport
         public List<Player> Players { get; set; }
         public Team()
         {
-            this.TeamName = "Имя";
+            this.TeamName = "Без имени";
             this.Wins = 0;
             this.Stars = 0;
             this.Players = new List<Player>();
@@ -83,17 +83,33 @@ namespace eSport
         static public void AttachTeam(List<Team> Teams)// Добавление команды
         {
             Console.Clear();
-            //Team NEWTeam = new Team(TeamName, Wins, Stars, Players);   -
-
             Console.WriteLine("Введите имя новой команды для её добавления в список");
-            string new_team = Console.ReadLine();
-            while (new_team.Trim() == "")
+            do
             {
-                Console.Write("Попробуйте снова: ");
-                new_team = Console.ReadLine();
-            }
-            Console.WriteLine("Введите колличество побед команды для добавления в список");
-            /* Program.Teams.Add(new Team [new_team], 5, 10, new List<Player>()
+                string new_team = Console.ReadLine();
+                while (new_team.Trim() == "")
+                {
+                    Console.Write("Попробуйте снова: ");
+                    new_team = Console.ReadLine();
+                }
+                if (Program.Teams.Any(t => t.TeamName == new_team))
+                {
+                    Console.WriteLine("Такая команда уже есть, попробуйте ещё раз. Для выхода в меню нажмите 'Home'");
+                    if (Console.ReadKey().Key == ConsoleKey.Home)
+                        break;
+                }
+                else
+                {
+                    Program.Teams.Add(new Team());
+                    Console.WriteLine("Команда добавлена. Для выхода в меню нажмите 'Home'");
+                    if (Console.ReadKey().Key == ConsoleKey.Home)
+                        break;
+                    else
+                        continue;
+                }
+            } while (Console.ReadKey().Key != ConsoleKey.Home);
+            //Console.WriteLine("Введите колличество побед команды для добавления в список");
+            /* Program.Teams.Add(new Team(new_team, 5, 10, new List<Player>()
              {
                  new Player("Алексей", 2, Player.PlayerStatus.Участник),
                  new Player("Серж", 2,Player.PlayerStatus.Глава),
@@ -129,7 +145,7 @@ namespace eSport
                     del_team = Console.ReadLine();
                     // if (Console.ReadKey().Key == ConsoleKey.Home)
                 }
-                if (!Teams.Contains((Team)Teams.Where(t => t.TeamName == del_team)))
+                if (!Program.Teams.Any(t => t.TeamName == del_team))
                 {
                     Console.WriteLine("Имя команды не найдено, попробуйте ещё раз. Для выхода в меню нажмите 'Home'");
                     if (Console.ReadKey().Key == ConsoleKey.Home)
@@ -139,7 +155,7 @@ namespace eSport
                 }
                 else
                 {
-                    Teams.Remove((Team)Teams.Where(t => t.TeamName == del_team));
+                    Program.Teams.Remove((Team)Teams.Find(t => t.TeamName.Contains(del_team)));
                     Console.WriteLine("Команда удалена из списка.");
                     Console.WriteLine("\nУдалить другую команду, или для прехода в меню нажмите 'Home'.");
                     if (Console.ReadKey().Key == ConsoleKey.Home)
