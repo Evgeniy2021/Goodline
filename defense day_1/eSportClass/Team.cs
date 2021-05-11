@@ -83,9 +83,11 @@ namespace eSport
         static public void AttachTeam(List<Team> Teams)// Добавление команды
         {
             Console.Clear();
-            Console.WriteLine("Введите имя новой команды для её добавления в список");
             do
             {
+                List<Player> tPlayers = new List<Player>();
+                int ntWins, ntStars, npStars, st = 4;
+                Console.WriteLine("Введите имя новой команды для её добавления в список");
                 string new_team = Console.ReadLine();
                 while (new_team.Trim() == "")
                 {
@@ -100,7 +102,33 @@ namespace eSport
                 }
                 else
                 {
-                    Program.Teams.Add(new Team());
+                    Console.WriteLine(" Количество побед");
+                    while (!Int32.TryParse(Console.ReadLine(), out ntWins))
+                        Console.WriteLine("Ошибка, введите количество побед числом!");
+                    Console.WriteLine(" Количество звёзд");
+                    while (!Int32.TryParse(Console.ReadLine(), out ntStars))
+                        Console.WriteLine("Ошибка, введите количество звёзд числом!");
+                    Console.WriteLine("Введите состав команды(5-ть игроков)\n в порядке:" +
+                        " Имя игрока, звёзды, статус(цифрой)\n1-Глава\n2-Соруководитель\n3-Старейшина\n4-Участник\n ");
+                    for (int i = 1; i < 6; i++)
+                    {
+                        //Player.PlayerStatus Status = (Player.PlayerStatus)4;
+                        Console.WriteLine($"Имя {i} игрока ");
+                        string nPlayer = Console.ReadLine();
+                        Console.WriteLine("Количество звёзд у игрока!");
+                        while (!Int32.TryParse(Console.ReadLine(), out npStars))
+                            Console.WriteLine("Ошибка, введите число!");
+                        Console.WriteLine("Статус игрока(цифрой)");
+                        while (!Int32.TryParse(Console.ReadLine(), out st) && (st >= 0 && st <= 3))
+                            Console.WriteLine("Ошибка, введите число!");
+                       /* if (st >= 0 && st <= 3)
+                        {
+                            Status = (Player.PlayerStatus)st;
+                        }*/
+                        tPlayers.Add(new Player(nPlayer, npStars, (Player.PlayerStatus)st));
+                    }
+                    Program.Teams.Add(new Team(new_team, ntWins, ntStars, tPlayers));
+
                     Console.WriteLine("Команда добавлена. Для выхода в меню нажмите 'Home'");
                     if (Console.ReadKey().Key == ConsoleKey.Home)
                         break;
@@ -108,28 +136,6 @@ namespace eSport
                         continue;
                 }
             } while (Console.ReadKey().Key != ConsoleKey.Home);
-            //Console.WriteLine("Введите колличество побед команды для добавления в список");
-            /* Program.Teams.Add(new Team(new_team, 5, 10, new List<Player>()
-             {
-                 new Player("Алексей", 2, Player.PlayerStatus.Участник),
-                 new Player("Серж", 2,Player.PlayerStatus.Глава),
-                 new Player("Жека", 2, Player.PlayerStatus.Соруководитель),
-                 new Player("Александр", 2, Player.PlayerStatus.Старейшина),
-                 new Player("Антон", 2, Player.PlayerStatus.Соруководитель ),
-             }));*/
-            // int vic = int.Parse(Console.ReadLine());
-            // while (vic < 0)
-            // {
-            // Console.Write("Попробуйте снова: ");
-            // vic = int.Parse(Console.ReadLine());
-            // }
-            // if (!Teams.Contains(Teams))
-            // {
-            // attach_team.Add(new_team, vic);
-            // Console.WriteLine("Команда \"{0}\" и её победы успешно добавлены в список.", new_team);
-            // }
-            // Console.WriteLine("Для прехода в меню нажмите любую клавишу...");
-            // Console.ReadKey();
         }
         //Removeteam(4)
         static public void RemoveTeam(List<Team> Teams)// Удаление команды
