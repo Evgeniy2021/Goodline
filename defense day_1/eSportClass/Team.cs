@@ -112,7 +112,6 @@ namespace eSport
                         " Имя игрока, звёзды, статус(цифрой)\n1-Глава\n2-Соруководитель\n3-Старейшина\n4-Участник\n ");
                     for (int i = 1; i < 6; i++)
                     {
-                        //Player.PlayerStatus Status = (Player.PlayerStatus)4;
                         Console.WriteLine($"Имя {i} игрока ");
                         string nPlayer = Console.ReadLine();
                         Console.WriteLine("Количество звёзд у игрока!");
@@ -121,14 +120,9 @@ namespace eSport
                         Console.WriteLine("Статус игрока(цифрой)");
                         while (!Int32.TryParse(Console.ReadLine(), out st) && (st >= 0 && st <= 3))
                             Console.WriteLine("Ошибка, введите число!");
-                       /* if (st >= 0 && st <= 3)
-                        {
-                            Status = (Player.PlayerStatus)st;
-                        }*/
                         tPlayers.Add(new Player(nPlayer, npStars, (Player.PlayerStatus)st));
                     }
                     Program.Teams.Add(new Team(new_team, ntWins, ntStars, tPlayers));
-
                     Console.WriteLine("Команда добавлена. Для выхода в меню нажмите 'Home'");
                     if (Console.ReadKey().Key == ConsoleKey.Home)
                         break;
@@ -145,30 +139,26 @@ namespace eSport
             do
             {
                 string del_team = Console.ReadLine();
-                while (del_team.Trim() == "" || Console.ReadKey().Key == ConsoleKey.Home)
+                while (del_team.Trim() == "")
                 {
-                    Console.Write("Укажите имя команды: ");
-                    del_team = Console.ReadLine();
-                    // if (Console.ReadKey().Key == ConsoleKey.Home)
+                    Console.Write("Укажите имя команды  или для выхода в 'Меню' ещё раз нажмите 'Enter': ");
+                    if (Console.ReadLine().Trim() == "")
+                        return;
                 }
                 if (!Program.Teams.Any(t => t.TeamName == del_team))
                 {
-                    Console.WriteLine("Имя команды не найдено, попробуйте ещё раз. Для выхода в меню нажмите 'Home'");
-                    if (Console.ReadKey().Key == ConsoleKey.Home)
-                        break;
-                    else
-                        continue;
+                    Console.WriteLine("Имя команды не найдено, попробуйте ещё раз. Для выхода в меню нажмите 'Enter' ");
+                   // del_team = Console.ReadLine();
+                    if (del_team.Trim() == "")
+                        return;
                 }
                 else
                 {
                     Program.Teams.Remove((Team)Teams.Find(t => t.TeamName.Contains(del_team)));
                     Console.WriteLine("Команда удалена из списка.");
-                    Console.WriteLine("\nУдалить другую команду, или для прехода в меню нажмите 'Home'.");
-                    if (Console.ReadKey().Key == ConsoleKey.Home)
-                        break;
-                    continue;
+                    Console.WriteLine("\nУдалить другую команду, или для прехода в меню нажмите 'Enter'.");
                 }
-            } while (Console.ReadKey().Key != ConsoleKey.Home);
+            } while (Console.ReadLine().Trim() == "");
         }
         //Tournament(5)--------------------------------------------------------------------------------------
         static public void Tournament(List<Team> Teams)// турнир(сетка)
@@ -292,7 +282,6 @@ namespace eSport
                 {
                     team.Wins++;
                 }
-
                 if (TourTeams.IndexOf(team) % 2 == 0)
                     Console.WriteLine(team);
             }

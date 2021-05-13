@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "WinForms_eSport/1.0.0": {
+        "runtime": {
+          "WinForms_eSport.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WinForms_eSport/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
