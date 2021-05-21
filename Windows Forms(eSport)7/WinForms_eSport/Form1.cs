@@ -5,62 +5,38 @@ namespace WinForms_eSport
 {
     public partial class Form1 : Form
     {
-        public virtual System.Drawing.Color BackColor { get; set; }
         public Form1()
         {
+            //new Form2(button7);
             InitializeComponent();
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            groupBox1.Visible = false;
-            button1.BackColor = ;
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            groupBox1.Visible = true;
-            button4.BackColor = ;
+            tabControl1.SelectedTab = tabControl1.TabPages["TabPage1"];
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabControl1.TabPages["TabPage2"];
+        }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabControl1.TabPages["TabPage3"];
+        }
+        private void button4_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabControl1.TabPages["TabPage4"];
+        }
+        private void button5_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabControl1.TabPages["TabPage5"];
+        }
+        public void button6_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabControl1.TabPages["TabPage6"];
+        }
+        public void button7_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabControl1.TabPages["TabPage7"];
         }
     }
 }

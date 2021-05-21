@@ -5,7 +5,6 @@ F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\bin\Debug\ne
 F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\bin\Debug\net5.0-windows\WinForms_eSport.dll
 F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\bin\Debug\net5.0-windows\ref\WinForms_eSport.dll
 F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\bin\Debug\net5.0-windows\WinForms_eSport.pdb
-F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\obj\Debug\net5.0-windows\WinForms_eSport.csprojAssemblyReference.cache
 F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\obj\Debug\net5.0-windows\WinForms_eSport.Form1.resources
 F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\obj\Debug\net5.0-windows\WinForms_eSport.Properties.Resources.resources
 F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\obj\Debug\net5.0-windows\WinForms_eSport.csproj.GenerateResource.cache
@@ -17,3 +16,5 @@ F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\obj\Debug\ne
 F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\obj\Debug\net5.0-windows\ref\WinForms_eSport.dll
 F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\obj\Debug\net5.0-windows\WinForms_eSport.pdb
 F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\obj\Debug\net5.0-windows\WinForms_eSport.genruntimeconfig.cache
+F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\obj\Debug\net5.0-windows\WinForms_eSport.csprojAssemblyReference.cache
+F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\obj\Debug\net5.0-windows\WinForms_eSport.Form2.resources
