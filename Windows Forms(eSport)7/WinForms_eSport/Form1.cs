@@ -1,13 +1,15 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace WinForms_eSport
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        private bool IsAdmin;
+        public Form1(bool optUserAdmin)
         {
-            //new Form2(button7);
+            IsAdmin = optUserAdmin;
             InitializeComponent();
         }
         private void button1_Click(object sender, EventArgs e)
@@ -37,6 +39,43 @@ namespace WinForms_eSport
         public void button7_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabControl1.TabPages["TabPage7"];
+        }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Label lb1 = new Label();
+            lb1.Text = "Все участники турнира";
+            lb1.Width = 250;
+            lb1.Location = new Point(380, 10);
+            lb1.Font = new Font("Tahoma", 14, FontStyle.Italic);
+            lb1.ForeColor = Color.Navy;
+            tabControl1.TabPages[0].Controls.Add(lb1);
+            if (IsAdmin)
+            {
+                Button button6 = new Button();
+                button6.Text = "Добавить команду";
+                button6.Width = 145;
+                button6.Height = 77;
+                button6.Location = new Point(0, 492);
+                button6.Font = new Font("Tahoma", 12, FontStyle.Bold);
+                button6.ForeColor = Color.Indigo;
+                button6.BackColor = Color.AliceBlue;
+                Controls.Add(button6);
+                button6.Click += new EventHandler(button6_Click);
+                Button button7 = new Button();
+                button7.Text = "Удалить команду";
+                button7.Width = 145;
+                button7.Height = 77;
+                button7.Location = new Point(0, 574);
+                button7.Font = new Font("Tahoma", 12, FontStyle.Bold);
+                button7.ForeColor = Color.Indigo;
+                button7.BackColor = Color.AliceBlue;
+                Controls.Add(button7);
+                button7.Click += new EventHandler(button7_Click);
+            }
+        }
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
