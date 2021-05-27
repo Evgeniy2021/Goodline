@@ -94,8 +94,10 @@ namespace WinForms_eSport
             this.Controls.Add(this.label1);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "AccountingSsystem";
             this.ResumeLayout(false);
             this.PerformLayout();
 
