@@ -231,7 +231,7 @@ namespace WinForms_eSport
             this.button1.Location = new System.Drawing.Point(0, 85);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(145, 77);
-            this.button1.TabIndex = 9;
+            this.button1.TabIndex = 0;
             this.button1.Text = "Список всех участников";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -247,7 +247,7 @@ namespace WinForms_eSport
             this.button2.Location = new System.Drawing.Point(0, 164);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(145, 77);
-            this.button2.TabIndex = 12;
+            this.button2.TabIndex = 1;
             this.button2.Text = "Победы выбранной команды";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -260,7 +260,7 @@ namespace WinForms_eSport
             this.button5.Location = new System.Drawing.Point(0, 410);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(145, 77);
-            this.button5.TabIndex = 13;
+            this.button5.TabIndex = 4;
             this.button5.Text = "Проведение турнира";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
@@ -273,7 +273,7 @@ namespace WinForms_eSport
             this.button4.Location = new System.Drawing.Point(0, 328);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(145, 77);
-            this.button4.TabIndex = 14;
+            this.button4.TabIndex = 3;
             this.button4.Text = "Количество претендентов в финал";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -286,7 +286,7 @@ namespace WinForms_eSport
             this.button3.Location = new System.Drawing.Point(0, 246);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(145, 77);
-            this.button3.TabIndex = 16;
+            this.button3.TabIndex = 2;
             this.button3.Text = "Звёздный статус команд";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -1083,7 +1083,7 @@ namespace WinForms_eSport
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Label label1;
-        public System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.TextBox textBox21;
         private System.Windows.Forms.Label label29;

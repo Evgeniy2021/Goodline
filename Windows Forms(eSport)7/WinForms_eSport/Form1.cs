@@ -59,6 +59,7 @@ namespace WinForms_eSport
                 button6.Font = new Font("Tahoma", 12, FontStyle.Bold);
                 button6.ForeColor = Color.Indigo;
                 button6.BackColor = Color.AliceBlue;
+                button6.TabIndex = 5;
                 Controls.Add(button6);
                 button6.Click += new EventHandler(button6_Click);
                 Button button7 = new Button();
@@ -69,6 +70,7 @@ namespace WinForms_eSport
                 button7.Font = new Font("Tahoma", 12, FontStyle.Bold);
                 button7.ForeColor = Color.Indigo;
                 button7.BackColor = Color.AliceBlue;
+                button7.TabIndex = 6;
                 Controls.Add(button7);
                 button7.Click += new EventHandler(button7_Click);
             }
