@@ -18,7 +18,8 @@ namespace WinForms_eSport
         private void button1_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabControl1.TabPages["TabPage1"];
-
+            // Model.InitTeams;
+            // label1.Text =  Model.List<Team>Teams;
         }
         private void button2_Click(object sender, EventArgs e)
         {
@@ -53,13 +54,6 @@ namespace WinForms_eSport
             lb1.Font = new Font("Tahoma", 14, FontStyle.Italic);
             lb1.ForeColor = Color.Navy;
             tabControl1.TabPages[0].Controls.Add(lb1);
-            Label lb2 = new Label();
-            lb2.Text =  "Все ";
-            lb2.Width = 250;
-            lb2.Location = new Point(150, 20);
-            lb2.Font = new Font("Tahoma", 14, FontStyle.Italic);
-            lb2.ForeColor = Color.Green;
-            tabControl1.TabPages[0].Controls.Add(lb2);
             if (IsAdmin)
             {
                 Button button6 = new Button();
