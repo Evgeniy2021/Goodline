@@ -6,15 +6,19 @@ namespace WinForms_eSport
 {
     public partial class Form1 : Form
     {
+        public Presenter presenter;
         private bool IsAdmin;
         public Form1(bool optUserAdmin)
         {
             IsAdmin = optUserAdmin;
             InitializeComponent();
+            Model model = new Model();
+            presenter = new Presenter(this, model);
         }
         private void button1_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabControl1.TabPages["TabPage1"];
+
         }
         private void button2_Click(object sender, EventArgs e)
         {
@@ -49,6 +53,13 @@ namespace WinForms_eSport
             lb1.Font = new Font("Tahoma", 14, FontStyle.Italic);
             lb1.ForeColor = Color.Navy;
             tabControl1.TabPages[0].Controls.Add(lb1);
+            Label lb2 = new Label();
+            lb2.Text =  "Все ";
+            lb2.Width = 250;
+            lb2.Location = new Point(150, 20);
+            lb2.Font = new Font("Tahoma", 14, FontStyle.Italic);
+            lb2.ForeColor = Color.Green;
+            tabControl1.TabPages[0].Controls.Add(lb2);
             if (IsAdmin)
             {
                 Button button6 = new Button();

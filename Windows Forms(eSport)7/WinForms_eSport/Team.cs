@@ -29,7 +29,7 @@ namespace WinForms_eSport
             string temp = $"Команда {TeamName}! - Одержано побед:{Wins}! - Боевых звёзд завоёвано:{Stars}!\n";
             foreach (var player in Players)
                 temp += "\n" + player;
-            return temp + "\n";//{TeamName,-10} |   {Wins,-3} |  {Stars,-3} |\n{"|",12} {"|",7} {"|",6}";
+            return temp + "\n";
         }
         //DisplayAllTeam(1)
         public static void DisplayTeam(List<Team> Teams)//вывод полного списка команд
@@ -61,7 +61,7 @@ namespace WinForms_eSport
                 //Team team;
                 teamName = Console.ReadLine();
                 // if (Teams.Where(t => t.TeamName == teamName).Count() > 0)
-                Team team = Program.Teams.Where(t => t.TeamName == teamName).ToList().First();
+                Team team = Model.Teams.Where(t => t.TeamName == teamName).ToList().First();
                 try
                 {
                     //Console.Clear();
@@ -94,7 +94,7 @@ namespace WinForms_eSport
                     Console.Write("Попробуйте снова: ");
                     new_team = Console.ReadLine();
                 }
-                if (Program.Teams.Any(t => t.TeamName == new_team))
+                if (Model.Teams.Any(t => t.TeamName == new_team))
                 {
                     Console.WriteLine("Такая команда уже есть, попробуйте ещё раз. Для выхода в меню нажмите 'Home'");
                     if (Console.ReadKey().Key == ConsoleKey.Home)
@@ -122,7 +122,7 @@ namespace WinForms_eSport
                             Console.WriteLine("Ошибка, введите число!");
                         tPlayers.Add(new Player(nPlayer, npStars, (Player.PlayerStatus)st));
                     }
-                    Program.Teams.Add(new Team(new_team, ntWins, ntStars, tPlayers));
+                    Model.Teams.Add(new Team(new_team, ntWins, ntStars, tPlayers));
                     Console.WriteLine("Команда добавлена. Для выхода в меню нажмите 'Home'");
                     if (Console.ReadKey().Key == ConsoleKey.Home)
                         break;
@@ -145,7 +145,7 @@ namespace WinForms_eSport
                     if (Console.ReadLine().Trim() == "")
                         return;
                 }
-                if (!Program.Teams.Any(t => t.TeamName == del_team))
+                if (!Model.Teams.Any(t => t.TeamName == del_team))
                 {
                     Console.WriteLine("Имя команды не найдено, попробуйте ещё раз. Для выхода в меню нажмите 'Enter' ");
                     // del_team = Console.ReadLine();
@@ -154,7 +154,7 @@ namespace WinForms_eSport
                 }
                 else
                 {
-                    Program.Teams.Remove(Teams.Find(t => t.TeamName.Contains(del_team)));
+                    Model.Teams.Remove(Teams.Find(t => t.TeamName.Contains(del_team)));
                     Console.WriteLine("Команда удалена из списка.");
                     Console.WriteLine("\nУдалить другую команду, или для прехода в меню нажмите 'Enter'.");
                 }
