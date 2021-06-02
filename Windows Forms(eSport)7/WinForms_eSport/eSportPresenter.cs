@@ -1,5 +1,5 @@
-﻿using System.Windows.Forms;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Windows.Forms;
 
 namespace WinForms_eSport
 {
@@ -16,10 +16,10 @@ namespace WinForms_eSport
         {
             return Model.GetTeamsInfo();
         }
-
         public void Tournament(List<TextBox> tour1, List<TextBox> tour2, List<TextBox> tour3, TextBox textBox21)
         {
-            if (Model.Teams.Count == 8) {
+            if (Model.Teams.Count == 8)
+            {
                 List<Team> teams = Model.Teams;
                 Model.TournamentSetWins(teams);
                 for (int i = 0; i < tour1.Count; i++)
@@ -45,6 +45,10 @@ namespace WinForms_eSport
             {
                 MessageBox.Show("Неверное кол-во команд! Должно быть 8!");
             }
+        }
+        public void SaveWinsTeams()
+        {
+            Model.SaveDatabase();
         }
     }
 }

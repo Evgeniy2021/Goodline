@@ -1,7 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
-using System.Collections.Generic;
 
 namespace WinForms_eSport
 {
@@ -37,13 +37,14 @@ namespace WinForms_eSport
         private void button5_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabControl1.TabPages["TabPage5"];
-            List<TextBox> tour1 = new List<TextBox>() 
+            List<TextBox> tour1 = new List<TextBox>()
             { textBox1, textBox2, textBox4, textBox3, textBox5, textBox6, textBox7, textBox8 };
             List<TextBox> tour2 = new List<TextBox>()
             { textBox16, textBox15, textBox18, textBox17 };
             List<TextBox> tour3 = new List<TextBox>()
             { textBox20, textBox19 };
             presenter.Tournament(tour1, tour2, tour3, textBox21);
+            presenter.SaveWinsTeams();
 
         }
         public void button6_Click(object sender, EventArgs e)

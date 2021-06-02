@@ -24,8 +24,31 @@ namespace WinForms_eSport
                 }
             }
             sqlConnection.Close();
-            
         }
+        public static void DatabaseWinsTeamsSave(List<Team> teams)
+        {
+            string sql = "DELETE  FROM WinsTeams";
+            SqlCommand command = new SqlCommand(sql, sqlConnection);
+            sqlConnection.Open();
+            try
+            {
+                command.ExecuteNonQuery();
+                sql = "INSERT WinsTeams VALUES";
+                foreach (var team in teams)
+                {
+                    if (sql[sql.Length - 1] == ')')
+                        sql += ",";
+                    sql += $" ('{team.TeamName}', {team.Wins})";
+                }
+                command = new SqlCommand(sql, sqlConnection);
+                command.ExecuteNonQuery();
+            }
+            catch (SqlException)
+            {
+                throw (new Exception("Ошибка при сохранении!"));
+            }
+            sqlConnection.Close();
 
+        }
     }
 }

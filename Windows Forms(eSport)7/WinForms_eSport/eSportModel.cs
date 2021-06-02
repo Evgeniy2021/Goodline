@@ -10,18 +10,21 @@ namespace WinForms_eSport
         {
             InitTeams();
             DBeSport.DatabaseLoad(Teams);
+            DBeSport.DatabaseWinsTeamsSave(Teams);
         }
-
         public string GetTeamsInfo()
         {
-            string info = "\n";//<<===== Информация о командах =====>>
+            string info = "\n";
             foreach (var team in Teams)
             {
                 info += team.ToString() + Environment.NewLine;
             }
             return info;
         }
-
+        public void SaveDatabase()
+        {
+            DBeSport.DatabaseWinsTeamsSave(Teams);
+        }
         public void TournamentSetWins(List<Team> teams)
         {
             Random RandomWins = new Random();
