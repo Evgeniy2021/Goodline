@@ -18,3 +18,40 @@ F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\obj\Debug\ne
 F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\obj\Debug\net5.0-windows\WinForms_eSport.genruntimeconfig.cache
 F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\obj\Debug\net5.0-windows\WinForms_eSport.csprojAssemblyReference.cache
 F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\obj\Debug\net5.0-windows\WinForms_eSport.Form2.resources
+D:\GoodLine\HomeWorks\Евгений Сущевский\Goodline\Windows Forms(eSport)7\WinForms_eSport\bin\Debug\net5.0-windows\WinForms_eSport.exe
+D:\GoodLine\HomeWorks\Евгений Сущевский\Goodline\Windows Forms(eSport)7\WinForms_eSport\bin\Debug\net5.0-windows\WinForms_eSport.deps.json
+D:\GoodLine\HomeWorks\Евгений Сущевский\Goodline\Windows Forms(eSport)7\WinForms_eSport\bin\Debug\net5.0-windows\WinForms_eSport.runtimeconfig.json
+D:\GoodLine\HomeWorks\Евгений Сущевский\Goodline\Windows Forms(eSport)7\WinForms_eSport\bin\Debug\net5.0-windows\WinForms_eSport.runtimeconfig.dev.json
+D:\GoodLine\HomeWorks\Евгений Сущевский\Goodline\Windows Forms(eSport)7\WinForms_eSport\bin\Debug\net5.0-windows\WinForms_eSport.dll
+D:\GoodLine\HomeWorks\Евгений Сущевский\Goodline\Windows Forms(eSport)7\WinForms_eSport\bin\Debug\net5.0-windows\ref\WinForms_eSport.dll
+D:\GoodLine\HomeWorks\Евгений Сущевский\Goodline\Windows Forms(eSport)7\WinForms_eSport\bin\Debug\net5.0-windows\WinForms_eSport.pdb
+D:\GoodLine\HomeWorks\Евгений Сущевский\Goodline\Windows Forms(eSport)7\WinForms_eSport\obj\Debug\net5.0-windows\WinForms_eSport.csprojAssemblyReference.cache
+D:\GoodLine\HomeWorks\Евгений Сущевский\Goodline\Windows Forms(eSport)7\WinForms_eSport\obj\Debug\net5.0-windows\WinForms_eSport.Form1.resources
+D:\GoodLine\HomeWorks\Евгений Сущевский\Goodline\Windows Forms(eSport)7\WinForms_eSport\obj\Debug\net5.0-windows\WinForms_eSport.Form2.resources
+D:\GoodLine\HomeWorks\Евгений Сущевский\Goodline\Windows Forms(eSport)7\WinForms_eSport\obj\Debug\net5.0-windows\WinForms_eSport.Properties.Resources.resources
+D:\GoodLine\HomeWorks\Евгений Сущевский\Goodline\Windows Forms(eSport)7\WinForms_eSport\obj\Debug\net5.0-windows\WinForms_eSport.csproj.GenerateResource.cache
+D:\GoodLine\HomeWorks\Евгений Сущевский\Goodline\Windows Forms(eSport)7\WinForms_eSport\obj\Debug\net5.0-windows\WinForms_eSport.GeneratedMSBuildEditorConfig.editorconfig
+D:\GoodLine\HomeWorks\Евгений Сущевский\Goodline\Windows Forms(eSport)7\WinForms_eSport\obj\Debug\net5.0-windows\WinForms_eSport.AssemblyInfoInputs.cache
+D:\GoodLine\HomeWorks\Евгений Сущевский\Goodline\Windows Forms(eSport)7\WinForms_eSport\obj\Debug\net5.0-windows\WinForms_eSport.AssemblyInfo.cs
+D:\GoodLine\HomeWorks\Евгений Сущевский\Goodline\Windows Forms(eSport)7\WinForms_eSport\obj\Debug\net5.0-windows\WinForms_eSport.csproj.CoreCompileInputs.cache
+D:\GoodLine\HomeWorks\Евгений Сущевский\Goodline\Windows Forms(eSport)7\WinForms_eSport\obj\Debug\net5.0-windows\WinForms_eSport.dll
+D:\GoodLine\HomeWorks\Евгений Сущевский\Goodline\Windows Forms(eSport)7\WinForms_eSport\obj\Debug\net5.0-windows\ref\WinForms_eSport.dll
+D:\GoodLine\HomeWorks\Евгений Сущевский\Goodline\Windows Forms(eSport)7\WinForms_eSport\obj\Debug\net5.0-windows\WinForms_eSport.pdb
+D:\GoodLine\HomeWorks\Евгений Сущевский\Goodline\Windows Forms(eSport)7\WinForms_eSport\obj\Debug\net5.0-windows\WinForms_eSport.genruntimeconfig.cache
+F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\bin\Debug\net5.0-windows\Microsoft.Data.SqlClient.dll
+F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\bin\Debug\net5.0-windows\Microsoft.Identity.Client.dll
+F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\bin\Debug\net5.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\bin\Debug\net5.0-windows\Microsoft.IdentityModel.Logging.dll
+F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\bin\Debug\net5.0-windows\Microsoft.IdentityModel.Protocols.dll
+F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\bin\Debug\net5.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\bin\Debug\net5.0-windows\Microsoft.IdentityModel.Tokens.dll
+F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\bin\Debug\net5.0-windows\System.IdentityModel.Tokens.Jwt.dll
+F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\bin\Debug\net5.0-windows\System.Runtime.Caching.dll
+F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\bin\Debug\net5.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\bin\Debug\net5.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\bin\Debug\net5.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\bin\Debug\net5.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\bin\Debug\net5.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+F:\Homemade\TASKsC#\GoodLine\Windows Forms(eSport)7\WinForms_eSport\obj\Debug\net5.0-windows\WinForms_eSport.csproj.CopyComplete

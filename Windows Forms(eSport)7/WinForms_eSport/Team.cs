@@ -26,30 +26,14 @@ namespace WinForms_eSport
         }
         public override string ToString()
         {
-            string temp = $"Команда {TeamName}! - Одержано побед:{Wins}! - Боевых звёзд завоёвано:{Stars}!\n";
+            string temp = $"Команда {TeamName}! - Одержано побед:{Wins}! - Боевых звёзд завоёвано:{Stars}!" + Environment.NewLine;
             foreach (var player in Players)
-                temp += "\n" + player;
-            return temp + "\n";
+                temp += Environment.NewLine + player;
+            return temp + Environment.NewLine;
         }
-        //DisplayAllTeam(1)
-        public static void DisplayTeam(List<Team> Teams)//вывод полного списка команд
-        {
-            Console.Clear();
-            if (Teams.Count == 0)
-            {
-                Console.WriteLine("Список пуст.");
-            }
-            else
-            {
-                //Console.WriteLine("|");
-                foreach (Team all in Teams)
-                {
-                    Console.WriteLine(all);
-                }
-            }
-            Console.WriteLine("Для прехода в меню нажмите любую клавишу...");
-            Console.ReadKey();
-        }
+        
+       
+      
         //Victory(2)
         static public void Victory(List<Team> Teams)// колличества побед указанной команды
         {
@@ -61,7 +45,7 @@ namespace WinForms_eSport
                 //Team team;
                 teamName = Console.ReadLine();
                 // if (Teams.Where(t => t.TeamName == teamName).Count() > 0)
-                Team team = Model.Teams.Where(t => t.TeamName == teamName).ToList().First();
+                Team team = Teams.Where(t => t.TeamName == teamName).ToList().First();
                 try
                 {
                     //Console.Clear();
@@ -80,6 +64,7 @@ namespace WinForms_eSport
             } while (Teams.Where(t => t.TeamName == teamName).Count() == 0 || Console.ReadKey().Key == ConsoleKey.Escape);
         }
         //Attachteam(3)
+        /*
         static public void AttachTeam(List<Team> Teams)// Добавление команды
         {
             Console.Clear();
@@ -94,7 +79,7 @@ namespace WinForms_eSport
                     Console.Write("Попробуйте снова: ");
                     new_team = Console.ReadLine();
                 }
-                if (Model.Teams.Any(t => t.TeamName == new_team))
+                if (Teams.Any(t => t.TeamName == new_team))
                 {
                     Console.WriteLine("Такая команда уже есть, попробуйте ещё раз. Для выхода в меню нажмите 'Home'");
                     if (Console.ReadKey().Key == ConsoleKey.Home)
@@ -122,7 +107,7 @@ namespace WinForms_eSport
                             Console.WriteLine("Ошибка, введите число!");
                         tPlayers.Add(new Player(nPlayer, npStars, (Player.PlayerStatus)st));
                     }
-                    Model.Teams.Add(new Team(new_team, ntWins, ntStars, tPlayers));
+                    Teams.Add(new Team(new_team, ntWins, ntStars, tPlayers));
                     Console.WriteLine("Команда добавлена. Для выхода в меню нажмите 'Home'");
                     if (Console.ReadKey().Key == ConsoleKey.Home)
                         break;
@@ -145,7 +130,7 @@ namespace WinForms_eSport
                     if (Console.ReadLine().Trim() == "")
                         return;
                 }
-                if (!Model.Teams.Any(t => t.TeamName == del_team))
+                if (!Teams.Any(t => t.TeamName == del_team))
                 {
                     Console.WriteLine("Имя команды не найдено, попробуйте ещё раз. Для выхода в меню нажмите 'Enter' ");
                     // del_team = Console.ReadLine();
@@ -154,125 +139,13 @@ namespace WinForms_eSport
                 }
                 else
                 {
-                    Model.Teams.Remove(Teams.Find(t => t.TeamName.Contains(del_team)));
+                    Teams.Remove(Teams.Find(t => t.TeamName.Contains(del_team)));
                     Console.WriteLine("Команда удалена из списка.");
                     Console.WriteLine("\nУдалить другую команду, или для прехода в меню нажмите 'Enter'.");
                 }
             } while (Console.ReadLine().Trim() == "");
         }
-        //Tournament(5)--------------------------------------------------------------------------------------
-        static public void Tournament(List<Team> Teams)// турнир(сетка)
-        {
-            Console.Clear();
-            if (Teams.Count() != 8)
-            {
-                Console.WriteLine("Для проведения турнира нужно 8 команд!");
-                Console.WriteLine($" В списке {Teams.Count} команд.");
-                Console.WriteLine($"Нажмите любую клавишу.");
-                Console.ReadKey();
-                return;
-            }
-            Console.WriteLine("Участники турнира:\n");
-            Console.WriteLine($" {"Команды",-10} | {"Победы"}");
-            Console.WriteLine($" {"-----------|--------"}");
-            foreach (var team in Teams)
-            {
-                team.Wins = 0;
-                if (Teams.Count == 0)
-                {
-                    Console.WriteLine("Список пуст.");
-                }
-                else
-                {
-                    Console.WriteLine($"  {team.TeamName,-10}|   {team.Wins}{" ",-13}");
-                    if (Teams.IndexOf(team) % 2 != 0)
-                        Console.WriteLine($" {"-----------",-10}|--------");
-                }
-            }
-            Console.WriteLine("Для перехода к первому туру, нажмите любую клавишу.");
-            Console.ReadKey();
-            Console.Clear();
-            Random RandomWins = new Random();
-            List<Team> TourTeams = new List<Team>();
-            foreach (var team in Teams)
-            {
-                TourTeams.Add(team);
-            }
-            Console.WriteLine("\nПервый тур\n");//------------------------------1----------------------------
-            Console.WriteLine($" {"Команды",-10} | {"Победы"}");
-            Console.WriteLine($" {"-----------|--------"}");
-            foreach (var team in TourTeams)
-            {
-                team.Wins = RandomWins.Next(0, 5);
-                // Console.WriteLine($"  {team.TeamName,-10}|   {team.Wins}{" ",-13}");
-                if (TourTeams.IndexOf(team) % 2 != 0 && TourTeams[TourTeams.IndexOf(team) - 1].Wins == team.Wins)
-                {
-                    team.Wins++;
-                }
-                Console.WriteLine($"  {team.TeamName,-10}|   {team.Wins}{" ",-13}");
-                if (TourTeams.IndexOf(team) % 2 != 0)
-                    Console.WriteLine($" {"-----------",-10}|--------");
-            }
-            Console.WriteLine("Для перехода ко второму туру, нажмите любую клавишу.");
-            Console.ReadKey();
-            Console.Clear();
-            for (int i = TourTeams.Count - 1; i > 0; i -= 2)
-            {
-                if (TourTeams[i].Wins > TourTeams[i - 1].Wins)
-                    TourTeams.Remove(TourTeams[i - 1]);
-                else
-                    TourTeams.Remove(TourTeams[i]);
-            }
-            Console.WriteLine("Второй тур\n");//--------------------------------2----------------------------
-            Console.WriteLine($" {"Команды",-10} | {"Победы"}");
-            Console.WriteLine($" {"-----------|--------"}");
-            foreach (var team in TourTeams)
-            {
-                team.Wins = RandomWins.Next(0, 5);
-                // Console.WriteLine($"  {team.TeamName,-10}|   {team.Wins}{" ",-13}");
-                if (TourTeams.IndexOf(team) % 2 != 0 && TourTeams[TourTeams.IndexOf(team) - 1].Wins == team.Wins)
-                {
-                    team.Wins++;
-                }
-                Console.WriteLine($"  {team.TeamName,-10}|   {team.Wins}{" ",-13}");
-                if (TourTeams.IndexOf(team) % 2 != 0)
-                    Console.WriteLine($" {"-----------",-10}|--------");
-            }
-            Console.WriteLine("Для перехода к третьему туру, нажмите любую клавишу.");
-            Console.ReadKey();
-            Console.Clear();
-            for (int i = TourTeams.Count - 1; i > 0; i -= 2)
-            {
-                if (TourTeams[i].Wins > TourTeams[i - 1].Wins)
-                    TourTeams.Remove(TourTeams[i - 1]);
-                else
-                    TourTeams.Remove(TourTeams[i]);
-            }
-            Console.WriteLine("Третий тур\n");//--------------------------------3----------------------------
-            Console.WriteLine($" {"Команды",-10} | {"Победы"}");
-            Console.WriteLine($" {"-----------|--------"}");
-            foreach (var team in TourTeams)
-            {
-                team.Wins = RandomWins.Next(0, 5);
-                // Console.WriteLine($"  {team.TeamName,-10}|   {team.Wins}{" ",-13}");
-                if (TourTeams.IndexOf(team) % 2 != 0 && TourTeams[TourTeams.IndexOf(team) - 1].Wins == team.Wins)
-                {
-                    team.Wins++;
-                }
-                Console.WriteLine($"  {team.TeamName,-10}|   {team.Wins}{" ",-13}");
-                if (TourTeams.IndexOf(team) % 2 != 0)
-                    Console.WriteLine($" {"-----------",-10}|--------");
-            }
-            Console.WriteLine("Для перехода в финал, нажмите любую клавишу.");
-            Console.ReadKey();
-            Console.Clear();
-            for (int i = TourTeams.Count - 1; i > 0; i -= 2)
-            {
-                if (TourTeams[i].Wins > TourTeams[i - 1].Wins)
-                    TourTeams.Remove(TourTeams[i - 1]);
-                else
-                    TourTeams.Remove(TourTeams[i]);
-            }
+        
             Console.WriteLine("Победитель!!!\n");//-----------------------------V----------------------------
             foreach (var team in TourTeams)
             {
@@ -310,5 +183,6 @@ namespace WinForms_eSport
             Console.WriteLine("\nДля прехода в меню нажмите любую клавишу...");
             Console.ReadKey();
         }
+        */
     }
 }

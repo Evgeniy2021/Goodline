@@ -101,10 +101,20 @@ namespace WinForms_eSport
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.textBoxTeamsWins = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.textBoxTeamsInfo = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -120,6 +130,7 @@ namespace WinForms_eSport
             this.tabPage4.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.SuspendLayout();
@@ -339,7 +350,7 @@ namespace WinForms_eSport
             this.tabPage7.Controls.Add(this.label7);
             this.tabPage7.Location = new System.Drawing.Point(4, 5);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(1007, 575);
+            this.tabPage7.Size = new System.Drawing.Size(1004, 577);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "tabPage7";
             // 
@@ -361,7 +372,7 @@ namespace WinForms_eSport
             this.tabPage6.Controls.Add(this.label6);
             this.tabPage6.Location = new System.Drawing.Point(4, 5);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(1007, 575);
+            this.tabPage6.Size = new System.Drawing.Size(1004, 577);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "tabPage6";
             // 
@@ -423,7 +434,7 @@ namespace WinForms_eSport
             this.tabPage5.Controls.Add(this.label5);
             this.tabPage5.Location = new System.Drawing.Point(4, 5);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1007, 575);
+            this.tabPage5.Size = new System.Drawing.Size(1004, 577);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "tabPage5";
             // 
@@ -843,6 +854,7 @@ namespace WinForms_eSport
             this.textBox2.ForeColor = System.Drawing.Color.Yellow;
             this.textBox2.Location = new System.Drawing.Point(135, 100);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(150, 30);
             this.textBox2.TabIndex = 85;
             this.textBox2.Text = "Команда 2";
@@ -865,6 +877,7 @@ namespace WinForms_eSport
             this.textBox1.ForeColor = System.Drawing.Color.Yellow;
             this.textBox1.Location = new System.Drawing.Point(135, 63);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(150, 30);
             this.textBox1.TabIndex = 81;
             this.textBox1.Text = "Команда 1";
@@ -888,7 +901,7 @@ namespace WinForms_eSport
             this.tabPage4.Controls.Add(this.label4);
             this.tabPage4.Location = new System.Drawing.Point(4, 5);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1007, 575);
+            this.tabPage4.Size = new System.Drawing.Size(1004, 577);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "tabPage4";
             // 
@@ -909,7 +922,7 @@ namespace WinForms_eSport
             this.tabPage3.Controls.Add(this.label3);
             this.tabPage3.Location = new System.Drawing.Point(4, 5);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1007, 575);
+            this.tabPage3.Size = new System.Drawing.Size(1004, 577);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
             // 
@@ -928,13 +941,142 @@ namespace WinForms_eSport
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tabPage2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabPage2.Controls.Add(this.label38);
+            this.tabPage2.Controls.Add(this.label37);
+            this.tabPage2.Controls.Add(this.groupBox1);
+            this.tabPage2.Controls.Add(this.label34);
+            this.tabPage2.Controls.Add(this.label33);
+            this.tabPage2.Controls.Add(this.textBoxTeamsWins);
             this.tabPage2.Controls.Add(this.label2);
             this.tabPage2.Location = new System.Drawing.Point(4, 5);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1007, 575);
+            this.tabPage2.Size = new System.Drawing.Size(1004, 577);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
+            // 
+            // label38
+            // 
+            this.label38.BackColor = System.Drawing.Color.MidnightBlue;
+            this.label38.Location = new System.Drawing.Point(929, 31);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(2, 321);
+            this.label38.TabIndex = 45;
+            // 
+            // label37
+            // 
+            this.label37.BackColor = System.Drawing.Color.MidnightBlue;
+            this.label37.Location = new System.Drawing.Point(477, 31);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(2, 321);
+            this.label37.TabIndex = 44;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label36);
+            this.groupBox1.Controls.Add(this.textBox22);
+            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.label35);
+            this.groupBox1.Location = new System.Drawing.Point(503, 49);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(404, 271);
+            this.groupBox1.TabIndex = 43;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            // 
+            // label36
+            // 
+            this.label36.Font = new System.Drawing.Font("Tahoma", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label36.ForeColor = System.Drawing.Color.MediumBlue;
+            this.label36.Location = new System.Drawing.Point(70, 91);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(257, 29);
+            this.label36.TabIndex = 44;
+            this.label36.Text = "Информация по выбранной команде";
+            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox22
+            // 
+            this.textBox22.AllowDrop = true;
+            this.textBox22.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.textBox22.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox22.Location = new System.Drawing.Point(47, 123);
+            this.textBox22.Multiline = true;
+            this.textBox22.Name = "textBox22";
+            this.textBox22.Size = new System.Drawing.Size(313, 127);
+            this.textBox22.TabIndex = 44;
+            this.textBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.comboBox1.ForeColor = System.Drawing.Color.Navy;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Лига",
+            "Ужас",
+            "HULK",
+            "RAB",
+            "Red",
+            "King",
+            "Дикие",
+            "Зубзазуб"});
+            this.comboBox1.Location = new System.Drawing.Point(47, 51);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(313, 24);
+            this.comboBox1.TabIndex = 41;
+            // 
+            // label35
+            // 
+            this.label35.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label35.ForeColor = System.Drawing.Color.MediumBlue;
+            this.label35.Location = new System.Drawing.Point(88, 19);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(231, 29);
+            this.label35.TabIndex = 42;
+            this.label35.Text = "Выберите имя команды";
+            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label34
+            // 
+            this.label34.Font = new System.Drawing.Font("Tahoma", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label34.ForeColor = System.Drawing.Color.Sienna;
+            this.label34.Location = new System.Drawing.Point(503, 1);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(376, 45);
+            this.label34.TabIndex = 40;
+            this.label34.Text = "Запрос из базы данных";
+            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label33
+            // 
+            this.label33.Font = new System.Drawing.Font("Tahoma", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label33.ForeColor = System.Drawing.Color.Sienna;
+            this.label33.Location = new System.Drawing.Point(52, 1);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(376, 45);
+            this.label33.TabIndex = 39;
+            this.label33.Text = "Информация в базе данных";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBoxTeamsWins
+            // 
+            this.textBoxTeamsWins.AcceptsTab = true;
+            this.textBoxTeamsWins.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBoxTeamsWins.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.textBoxTeamsWins.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBoxTeamsWins.ForeColor = System.Drawing.Color.Indigo;
+            this.textBoxTeamsWins.Location = new System.Drawing.Point(3, 47);
+            this.textBoxTeamsWins.Multiline = true;
+            this.textBoxTeamsWins.Name = "textBoxTeamsWins";
+            this.textBoxTeamsWins.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxTeamsWins.Size = new System.Drawing.Size(446, 523);
+            this.textBoxTeamsWins.TabIndex = 38;
+            this.textBoxTeamsWins.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
@@ -951,13 +1093,26 @@ namespace WinForms_eSport
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tabPage1.Controls.Add(this.label1);
+            this.tabPage1.Controls.Add(this.textBoxTeamsInfo);
             this.tabPage1.Cursor = System.Windows.Forms.Cursors.Default;
             this.tabPage1.Location = new System.Drawing.Point(4, 5);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(5);
-            this.tabPage1.Size = new System.Drawing.Size(1007, 575);
+            this.tabPage1.Size = new System.Drawing.Size(1004, 577);
             this.tabPage1.TabIndex = 0;
+            // 
+            // textBoxTeamsInfo
+            // 
+            this.textBoxTeamsInfo.BackColor = System.Drawing.Color.Gainsboro;
+            this.textBoxTeamsInfo.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBoxTeamsInfo.ForeColor = System.Drawing.Color.Indigo;
+            this.textBoxTeamsInfo.Location = new System.Drawing.Point(3, 43);
+            this.textBoxTeamsInfo.Multiline = true;
+            this.textBoxTeamsInfo.Name = "textBoxTeamsInfo";
+            this.textBoxTeamsInfo.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxTeamsInfo.Size = new System.Drawing.Size(1001, 531);
+            this.textBoxTeamsInfo.TabIndex = 2;
+            this.textBoxTeamsInfo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tabControl1
             // 
@@ -972,22 +1127,14 @@ namespace WinForms_eSport
             this.tabControl1.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
             this.tabControl1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tabControl1.ItemSize = new System.Drawing.Size(1, 1);
-            this.tabControl1.Location = new System.Drawing.Point(146, 79);
+            this.tabControl1.Location = new System.Drawing.Point(148, 82);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(10, 10);
             this.tabControl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1015, 584);
+            this.tabControl1.Size = new System.Drawing.Size(1012, 586);
             this.tabControl1.TabIndex = 37;
-            // 
-            // label1
-            // 
-            this.label1.Location = new System.Drawing.Point(3, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1001, 541);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
             // 
             // Form1
             // 
@@ -1037,7 +1184,10 @@ namespace WinForms_eSport
             this.tabPage3.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -1119,7 +1269,17 @@ namespace WinForms_eSport
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBoxTeamsInfo;
+        private System.Windows.Forms.TextBox textBoxTeamsWins;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label38;
     }
 }
 
